@@ -1,0 +1,40 @@
+{
+  "name": "niftynepal",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "predev": "tsx scripts/seed.ts --if-empty",
+    "dev": "next dev",
+    "build": "next build",
+    "prestart": "tsx scripts/seed.ts --if-empty",
+    "start": "next start",
+    "seed": "tsx scripts/seed.ts",
+    "seed:if-empty": "tsx scripts/seed.ts --if-empty",
+    "typecheck": "tsc --noEmit",
+    "email": "email dev --dir emails --port 3001"
+  },
+  "dependencies": {
+    "@react-email/components": "^0.5.0",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.4.5",
+    "jose": "^5.9.0",
+    "next": "^16.0.0",
+    "nodemailer": "^6.10.1",
+    "pg": "^8.13.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/nodemailer": "^6.4.24",
+    "@types/pg": "^8.11.10",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "postcss": "^8.4.47",
+    "react-email": "^4.3.2",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.6.0"
+  }
+}
